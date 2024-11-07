@@ -6,6 +6,7 @@ import APropos from './pages/APropos'
 import Header from './components/Header'
 import Error from './components/Error'
 import Footer from './components/Footer'
+import './styles/index.css'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

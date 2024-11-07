@@ -1,0 +1,18 @@
+.section_about {
+    height: 223px;
+    background-image: url('../assets/montagnes.jpeg');
+    background-size: cover;
+    background-position: 2% 49%;
+    background-repeat: no-repeat;
+    width: 85%;
+    border-radius: 15px;
+    background-color: rgb(117, 117, 117);
+    margin: auto;
+}
+.opacity_about {
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 15px;
+}

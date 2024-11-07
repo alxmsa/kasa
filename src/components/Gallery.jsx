@@ -6,30 +6,12 @@ function Gallery() {
     return (
         <div>
             <ul className='list_annonces'>
-                {annonces.map((title) => (
+                {annonces.map(({title, cover}) => (
                     <li className='item'>
-                        <div className='item-cover'>{title}</div>
+                        <h2 className='gallery_h2'>{title}</h2>
+                        <img alt={title} src={cover} className='gallery_img' />
                     </li>
                 ))}
-                <li className='item'>
-                    <div className='item-cover'></div>
-                </li>
-                <li className='item'>
-                    <div className='item-cover'></div>
-                </li>
-                <li className='item'>
-                    <div className='item-cover'></div>
-                </li>
-                <li className='item'>
-                    <div className='item-cover'></div>
-                </li>
-                <li className='item'>
-                    <div className='item-cover'></div>
-                </li>
-                <li className='item'>
-                    <div className='item-cover'></div>
-                </li>
-
             </ul>
         </div>
     )

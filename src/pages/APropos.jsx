@@ -1,8 +1,8 @@
+import SectionAbout from '../components/SectionAbout'
+
 function APropos() {
     return (
-        <div>
-            <h1>À Propos</h1>
-        </div>
+        <SectionAbout />
     )
 }
 

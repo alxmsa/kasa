@@ -1,0 +1,29 @@
+.error_div {
+    color: #ff6060;
+    text-align: center;
+}
+.error_h1 {
+    font-size: 200px;
+}
+.error_p {
+    font-size: 50px;
+}
+.error_p2 {
+    color: black;
+    text-decoration: underline;
+    font-size: 30px;
+    margin: 180px auto;
+}
+
+@media (max-width: 650px){
+    .error_p2 {
+        margin: 100px auto;
+        font-size: 15px;
+    }
+    .error_p {
+        font-size: 30px;
+    }
+    .error_h1 {
+        font-size: 140px;
+    }
+}

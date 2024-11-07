@@ -1,8 +1,13 @@
+import Gallery from '../components/Gallery'
+import Section1 from '../components/Section1'
+
 function Home() {
     return (
-        <div>
-            <h1>Page D'accueil</h1>
-        </div>
+        <section>
+            <Section1 />
+            <Gallery />
+        </section>
+
     )
 }
 

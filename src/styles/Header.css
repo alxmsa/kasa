@@ -1,0 +1,44 @@
+.nav_flex {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+.nav_kasa {
+    margin-top: 20px;
+}
+.banner {
+    color: black;
+    text-align: center;
+    padding: 32px;
+    border-bottom: solid 3px black;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+}
+.title {
+    padding-left: 2rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.7rem;
+}
+.title:hover {
+    text-decoration: underline;
+}
+.logo {
+    width: 210px;
+}
+
+@media (max-width: 650px){
+    .nav_flex {
+        width: 95%;
+    }
+    .logo {
+        width: 120px;
+    }
+    .title {
+        font-size: 1.40rem;
+        padding-left: 15px;
+    }
+}

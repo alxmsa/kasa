@@ -1,0 +1,20 @@
+.list_annonces {
+	list-style-type: none;
+	width: 85%;
+	margin: 40px auto;
+    background-color: rgb(245, 243, 243);
+    border-radius: 15px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 50px;
+	justify-content: center;
+	padding: 60px 30px;
+}
+.item-cover{
+	width: 340px;
+	height: 340px;
+}
+.item {
+    background-color: rgb(171, 58, 58);
+    border-radius: 10px;
+}

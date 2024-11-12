@@ -1,7 +1,7 @@
 .nav_flex {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     margin: 20px auto;
 }
 .nav_kasa {
@@ -31,14 +31,12 @@
 }
 
 @media (max-width: 650px){
-    .nav_flex {
-        width: 95%;
-    }
     .logo {
         width: 120px;
     }
     .title {
-        font-size: 1.40rem;
+        font-size: 14px;
         padding-left: 15px;
+        text-transform: uppercase;
     }
 }

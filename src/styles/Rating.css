@@ -1,0 +1,6 @@
+.rating div {
+    display: flex;
+}
+.rating img {
+    height: 24px;
+}

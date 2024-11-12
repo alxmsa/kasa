@@ -43,3 +43,29 @@
     border-radius: 5px;
     padding: 10px;
 }
+
+@media (max-width: 650px) {
+    .section_about {
+        height: 110px;
+    }
+    .sectionAbout_ul {
+        padding: 0 !important;
+    }
+    .section_about_li {
+        width: 85%;
+        margin: 20px auto;
+    }
+    .section_about_li h2 {
+        font-size: 15px;
+        margin: auto 10px;
+        height: auto;
+        padding: 0;
+    }
+    .section_about_li img {
+        height: 16px;
+        margin: auto 10px;
+    }
+    .section_about_content {
+        font-size: 12px;
+    }
+}

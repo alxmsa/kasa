@@ -23,35 +23,34 @@ function LogementsDetails () {
 
     return (
         <section className='logement_section'>
-            <div className='d-flex justify-content-between'>
+            <div className='logement_div1'>
                 <div key={logement.title}>
                     <h1 className='logement_title'>{logement.title}</h1>
                     <p className='logement_location'>{logement.location}</p>
-                    <ul className='d-flex logement_tags'>
+                    <ul className='logement_tags'>
                         {logement.tags.map((tag, index) => (
                             <li key={index}>{tag}</li>
                         ))}
                     </ul>
                 </div>
-                <div className="" key={logement.host.name}>
-                    <div className='d-flex logement_host'>
+                <div className="logement_host_name" key={logement.host.name}>
+                    <div className='logement_host'>
                         <p className='logement_hostName'>{logement.host.name}</p>
                         <img className='logement_hostImg' src={logement.host.picture} alt={logement.host.name}/>
                     </div>
-                    <Rating />
-                    {/* <div>RATING à changer 🔨🚧</div> */}
+                    <Rating rating={logement.rating} />
                 </div>
             </div>
-            <div className='d-flex justify-content-between'>
+            <div className='logement_div2'>
                 <div className='logement_toggle'>
-                    <div className='logement_description d-flex justify-content-between' onClick={toggleDescription}>
+                    <div className='logement_description' onClick={toggleDescription}>
                         <p>Description</p>
                         <img src={isDescriptionOpen ? imgDown : imgUp} alt="chevron" className={`logement_chevronUpDown ${isDescriptionOpen ? 'open' : ''}`} />
                     </div>
                     {isDescriptionOpen && <div className="logement_description_content">{logement.description}</div>}
                 </div>
                 <div className='logement_toggle'>
-                    <div className='logement_description d-flex justify-content-between' onClick={toggleEquipments}>
+                    <div className='logement_description' onClick={toggleEquipments}>
                         <p>Équipements</p>
                         <img 
                             src={isEquipmentsOpen ? imgDown : imgUp} 

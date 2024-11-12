@@ -19,7 +19,7 @@ function SectionABout(){
                 <div className='opacity_about'>
                 </div>
             </div>
-            <ul>
+            <ul className="sectionAbout_ul">
                 {apropos.map(({title, content}, index)=> (
                     <li key={index} className={`section_about_li ${openItems[index] ? 'open' : ''}`}>
                         <div>

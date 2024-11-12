@@ -1,32 +1,22 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-import img from '../assets/montagnes.jpeg'
+import Carousel from 'react-bootstrap/Carousel';
+import "bootstrap/dist/css/bootstrap.css";
+import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
+import "../styles/Carousel.css";
+import { useParams } from 'react-router-dom';
+import annonces from '../datas/annonces.json';
 
 function Carousel1() {
-    return (
-        <div>
-            <Carousel>
-                    <div>
-                        <img src={img} alt=''/>
-                        <p className="legend">1/4</p>
-                    </div>
-                    <div>
-                        <img src={img} alt=''/>
-                        <p className="legend">2/4</p>
-                    </div>
-                    <div>
-                        <img src={img} alt=''/>
-                        <p className="legend">3/4</p>
-                    </div>
-                    <div>
-                        <img src={img} alt=''/>
-                        <p className="legend">4/4</p>
-                    </div>
-                </Carousel>
-                <div>
+    const { id } = useParams();
+    const logement = annonces.find((item) => item.id === id);
 
-                </div>
-            </div>
+    return (
+        <Carousel className='carousel'>
+            {logement.pictures.map((picture, index) => (
+                <Carousel.Item key={index} >
+                        <img className='carousel_img' alt='' src={picture}/>
+                </Carousel.Item>
+            ))}
+        </Carousel>    
     )
 }
 

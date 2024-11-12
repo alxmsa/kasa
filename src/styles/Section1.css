@@ -19,5 +19,27 @@
 .section1_p {
     color: white;
     font-size: 48px;
+    position: relative;
+    top: -150px;
+    left: 2px;
     text-align: center;
+}
+@media (max-width: 1024px) {
+    .section1_p {
+        font-size: 40px;
+    }
+}
+@media (max-width: 650px) {
+    .section1 {
+        height: 110px;
+    }
+    .section1_p {
+        width: 80%;
+        font-size: 23px;
+        font-weight: 700;
+        top: -86px;
+        left: 15px;
+        text-align: left;
+    }
+
 }

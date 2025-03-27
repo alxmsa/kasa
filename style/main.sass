@@ -1,0 +1,364 @@
+// VARIABLES
+$primary-color: #ff6060
+$black: #000
+$white: #fff
+$light-grey: rgb(245, 243, 243)
+$soft-bg: rgb(251, 251, 251)
+$grey-bg: rgb(117, 117, 117)
+$font-family: 'Montserrat', sans-serif
+$mobile: 650px
+$tablet: 1024px
+
+// GLOBAL
+*
+  font-family: $font-family
+
+// CAROUSEL
+.carousel
+  width: 85%
+  margin: 20px auto
+
+  &_img
+    height: 500px
+    width: 100%
+    border-radius: 25px
+    object-fit: cover
+
+    @media (max-width: $mobile)
+      height: 260px
+
+// ERROR SECTION
+.error_div
+  color: $primary-color
+  text-align: center
+
+.error_h1
+  font-size: 200px
+
+.error_p
+  font-size: 50px
+
+.error_p2
+  color: black
+  text-decoration: underline
+  font-size: 30px
+  margin: 180px auto
+
+@media (max-width: $mobile)
+  .error_h1
+    font-size: 140px
+
+  .error_p
+    font-size: 30px
+
+  .error_p2
+    font-size: 15px
+    margin: 100px auto
+
+// FOOTER
+.footer
+  background-color: $black
+  width: 100%
+
+  &_img
+    display: block
+    margin: auto
+    padding-top: 40px
+
+  &_p
+    color: $white
+    font-size: 20px
+    text-align: center
+    padding-bottom: 20px
+    margin: 0
+
+// GALLERY LIST
+.list_annonces
+  list-style-type: none
+  width: 85%
+  margin: 40px auto
+  padding: 60px 30px
+  background-color: $light-grey
+  border-radius: 15px
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-evenly
+  gap: 50px
+
+.item
+  width: 340px
+  height: 340px
+  border-radius: 15px
+  position: relative
+
+  @media (max-width: $mobile)
+    width: 335px
+    height: 255px
+
+.gallery_img
+  width: 100%
+  height: 100%
+  border-radius: 15px
+  object-fit: cover
+
+  &:hover
+    cursor: pointer
+
+.gallery_h2
+  color: $white
+  position: absolute
+  bottom: 5px
+  left: 10px
+  font-size: 18px
+  width: 50%
+
+  &:hover
+    cursor: pointer
+
+// NAVIGATION
+.nav_flex
+  display: flex
+  justify-content: space-between
+  width: 85%
+  margin: 20px auto
+
+.nav_kasa
+  margin-top: 20px
+
+.banner
+  color: black
+  text-align: center
+  padding: 32px
+  border-bottom: 3px solid black
+  display: flex
+  justify-content: flex-end
+  flex-direction: row
+  align-items: center
+
+.title
+  padding-left: 2rem
+  text-decoration: none
+  color: $black
+  font-size: 1.7rem
+
+  &:hover
+    text-decoration: underline
+
+.logo
+  width: 210px
+
+@media (max-width: $mobile)
+  .logo
+    width: 120px
+
+  .title
+    font-size: 14px
+    padding-left: 15px
+    text-transform: uppercase
+
+// LOGEMENT SECTION
+.logement
+  &_section
+    width: 85%
+    margin: 10px auto 100px
+
+  &_title
+    font-size: 36px
+    color: $primary-color
+    margin: 0
+
+  &_location
+    font-size: 18px
+    margin: 5px 0
+    font-weight: 500
+
+  &_host,
+  &_div1,
+  &_div2,
+  &_tags,
+  &_description
+    display: flex
+
+  &_div1,
+  &_div2,
+  &_description
+    justify-content: space-between
+
+  &_host
+    justify-content: end
+
+  &_hostName
+    color: $primary-color
+    font-size: 18px
+    margin-right: 10px
+
+  &_hostImg
+    height: 64px
+    width: 64px
+    border-radius: 50%
+
+  &_tags
+    list-style-type: none
+    padding: 0
+    flex-wrap: wrap
+    gap: 5px
+
+    li
+      background-color: $primary-color
+      margin: auto 10px auto 0
+      color: $white
+      border-radius: 10px
+      padding: 6px 18px
+
+  &_toggle
+    width: 45%
+
+  &_description
+    background-color: $primary-color
+    color: $white
+    border-radius: 5px
+
+    p
+      margin: 1em 10px
+
+    &_content
+      padding-top: 10px
+
+  &_equipments_content
+    padding-top: 10px
+
+  &_chevronUpDown
+    width: 24px
+    margin: auto 15px
+
+@media (max-width: $mobile)
+  .logement_div1,
+  .logement_div2
+    display: block
+
+  .logement_div2
+    margin-top: 10px
+
+  .logement_host_name
+    display: flex
+    justify-content: space-between
+    flex-direction: row-reverse
+
+  .logement_hostName
+    margin: auto 10px
+
+  .logement_toggle
+    width: 100%
+    margin-top: 20px
+
+.rating
+  div
+    display: flex
+
+  img
+    height: 24px
+
+// SECTION1 & ABOUT
+.section1
+  height: 223px
+  background-image: url('../assets/falaises.webp')
+  background-size: cover
+  background-position: 2% 49%
+  background-repeat: no-repeat
+  width: 85%
+  border-radius: 15px
+  background-color: $grey-bg
+  margin: auto
+
+.opacity
+  opacity: 0.6
+  width: 100%
+  height: 100%
+  background-color: black
+  border-radius: 15px
+
+.section1_p
+  color: $white
+  font-size: 48px
+  position: relative
+  top: -150px
+  left: 2px
+  text-align: center
+
+@media (max-width: $tablet)
+  .section1_p
+    font-size: 40px
+
+@media (max-width: $mobile)
+  .section1
+    height: 110px
+
+  .section1_p
+    width: 80%
+    font-size: 23px
+    font-weight: 700
+    top: -86px
+    left: 15px
+    text-align: left
+
+.section_about
+  @extend .section1
+  background-image: url('../assets/montagnes.jpeg')
+
+.opacity_about
+  @extend .opacity
+
+.section_about_li
+  width: 70%
+  background-color: $primary-color
+  border-radius: 5px
+  color: $white
+  margin: 30px auto
+
+  div
+    display: flex
+    justify-content: space-between
+
+  img
+    height: 32px
+    margin: auto 18px
+
+    &:hover
+      cursor: pointer
+
+  h2
+    font-size: 24px
+    margin: auto 18px
+    height: 52px
+    padding: 15px 0 0
+
+.section_about_content
+  background-color: $soft-bg
+  border-radius: 5px
+  padding: 10px
+  color: black
+  border: 1px solid $soft-bg
+
+@media (max-width: $mobile)
+  .section_about
+    height: 110px
+
+  .sectionAbout_ul
+    padding: 0 !important
+
+  .section_about_li
+    width: 85%
+    margin: 20px auto
+
+    h2
+      font-size: 15px
+      margin: auto 10px
+      height: auto
+      padding: 0
+
+    img
+      height: 16px
+      margin: auto 10px
+
+  .section_about_content
+    font-size: 12px

@@ -1,4 +1,3 @@
-import '../styles/Section1.css'
 function Section1(){
 
     return (

@@ -1,5 +1,4 @@
 import CareScale from "./Carescale";
-import '../styles/Rating.css';
 
 function Rating({ rating }) {
     console.log({rating});

@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import "bootstrap/dist/css/bootstrap.css";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
-import "../styles/Carousel.css";
 import { useParams } from 'react-router-dom';
 import annonces from '../datas/annonces.json';
 

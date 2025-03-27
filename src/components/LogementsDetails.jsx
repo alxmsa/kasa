@@ -4,7 +4,6 @@ import annonces from '../datas/annonces.json';
 import imgUp from '../assets/chevron-up.svg';
 import imgDown from '../assets/chevron-down.svg';
 import Rating from './Rating';
-import '../styles/LogementsDetails.css';
 
 function LogementsDetails () {
 

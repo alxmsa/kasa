@@ -1,0 +1,370 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.carousel {
+  width: 85%;
+  margin: 20px auto;
+}
+.carousel_img {
+  height: 500px;
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+@media (max-width: 650px) {
+  .carousel_img {
+    height: 260px;
+  }
+}
+
+.error_div {
+  color: #ff6060;
+  text-align: center;
+}
+
+.error_h1 {
+  font-size: 200px;
+}
+
+.error_p {
+  font-size: 50px;
+}
+
+.error_p2 {
+  color: black;
+  text-decoration: underline;
+  font-size: 30px;
+  margin: 180px auto;
+}
+
+@media (max-width: 650px) {
+  .error_h1 {
+    font-size: 140px;
+  }
+  .error_p {
+    font-size: 30px;
+  }
+  .error_p2 {
+    font-size: 15px;
+    margin: 100px auto;
+  }
+}
+.footer {
+  background-color: #000;
+  width: 100%;
+}
+.footer_img {
+  display: block;
+  margin: auto;
+  padding-top: 40px;
+}
+.footer_p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.list_annonces {
+  list-style-type: none;
+  width: 85%;
+  margin: 40px auto;
+  padding: 60px 30px;
+  background-color: rgb(245, 243, 243);
+  border-radius: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.item {
+  width: 340px;
+  height: 340px;
+  border-radius: 15px;
+  position: relative;
+}
+@media (max-width: 650px) {
+  .item {
+    width: 335px;
+    height: 255px;
+  }
+}
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.gallery_img:hover {
+  cursor: pointer;
+}
+
+.gallery_h2 {
+  color: #fff;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 18px;
+  width: 50%;
+}
+.gallery_h2:hover {
+  cursor: pointer;
+}
+
+.nav_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 20px auto;
+}
+
+.nav_kasa {
+  margin-top: 20px;
+}
+
+.banner {
+  color: black;
+  text-align: center;
+  padding: 32px;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  padding-left: 2rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.7rem;
+}
+.title:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 210px;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    width: 120px;
+  }
+  .title {
+    font-size: 14px;
+    padding-left: 15px;
+    text-transform: uppercase;
+  }
+}
+.logement_section {
+  width: 85%;
+  margin: 10px auto 100px;
+}
+.logement_title {
+  font-size: 36px;
+  color: #ff6060;
+  margin: 0;
+}
+.logement_location {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: 500;
+}
+.logement_host, .logement_div1, .logement_div2, .logement_tags, .logement_description {
+  display: flex;
+}
+.logement_div1, .logement_div2, .logement_description {
+  justify-content: space-between;
+}
+.logement_host {
+  justify-content: end;
+}
+.logement_hostName {
+  color: #ff6060;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.logement_hostImg {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+.logement_tags {
+  list-style-type: none;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.logement_tags li {
+  background-color: #ff6060;
+  margin: auto 10px auto 0;
+  color: #fff;
+  border-radius: 10px;
+  padding: 6px 18px;
+}
+.logement_toggle {
+  width: 45%;
+}
+.logement_description {
+  background-color: #ff6060;
+  color: #fff;
+  border-radius: 5px;
+}
+.logement_description p {
+  margin: 1em 10px;
+}
+.logement_description_content {
+  padding-top: 10px;
+}
+.logement_equipments_content {
+  padding-top: 10px;
+}
+.logement_chevronUpDown {
+  width: 24px;
+  margin: auto 15px;
+}
+
+@media (max-width: 650px) {
+  .logement_div1,
+  .logement_div2 {
+    display: block;
+  }
+  .logement_div2 {
+    margin-top: 10px;
+  }
+  .logement_host_name {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .logement_hostName {
+    margin: auto 10px;
+  }
+  .logement_toggle {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.rating div {
+  display: flex;
+}
+.rating img {
+  height: 24px;
+}
+
+.section1, .section_about {
+  height: 223px;
+  background-image: url("../src/assets/falaises.webp");
+  background-size: cover;
+  background-position: 2% 49%;
+  background-repeat: no-repeat;
+  width: 85%;
+  border-radius: 15px;
+  background-color: rgb(117, 117, 117);
+  margin: auto;
+}
+
+.opacity, .opacity_about {
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.section1_p {
+  color: #fff;
+  font-size: 48px;
+  position: relative;
+  top: -150px;
+  left: 2px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .section1_p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 650px) {
+  .section1, .section_about {
+    height: 110px;
+  }
+  .section1_p {
+    width: 80%;
+    font-size: 23px;
+    font-weight: 700;
+    top: -86px;
+    left: 15px;
+    text-align: left;
+  }
+}
+.section_about {
+  background-image: url("../src/assets/montagnes.jpeg");
+}
+
+.section_about_li {
+  width: 70%;
+  background-color: #ff6060;
+  border-radius: 5px;
+  color: #fff;
+  margin: 30px auto;
+}
+.section_about_li div {
+  display: flex;
+  justify-content: space-between;
+}
+.section_about_li img {
+  height: 32px;
+  margin: auto 18px;
+}
+.section_about_li img:hover {
+  cursor: pointer;
+}
+.section_about_li h2 {
+  font-size: 24px;
+  margin: auto 18px;
+  height: 52px;
+  padding: 15px 0 0;
+}
+
+.section_about_content {
+  background-color: rgb(251, 251, 251);
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  border: 1px solid rgb(251, 251, 251);
+}
+
+@media (max-width: 650px) {
+  .section_about {
+    height: 110px;
+  }
+  .sectionAbout_ul {
+    padding: 0 !important;
+  }
+  .section_about_li {
+    width: 85%;
+    margin: 20px auto;
+  }
+  .section_about_li h2 {
+    font-size: 15px;
+    margin: auto 10px;
+    height: auto;
+    padding: 0;
+  }
+  .section_about_li img {
+    height: 16px;
+    margin: auto 10px;
+  }
+  .section_about_content {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

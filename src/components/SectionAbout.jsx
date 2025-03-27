@@ -1,5 +1,4 @@
 import { useState } from "react"
-import '../styles/SectionAbout.css'
 import apropos from '../datas/apropos.json'
 import imgUp from '../assets/chevron-up.svg'
 import imgDown from '../assets/chevron-down.svg'

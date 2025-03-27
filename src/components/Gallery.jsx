@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import '../styles/Gallery.css';
 import annonces from '../datas/annonces.json';
 
 function Gallery() {

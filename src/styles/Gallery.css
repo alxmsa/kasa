@@ -22,6 +22,9 @@
 	border-radius: 15px;
 	object-fit: cover;
 }
+.gallery_img:hover {
+	cursor: pointer;
+}
 .gallery_h2 {
 	color: white;
 	position: absolute;
@@ -29,6 +32,9 @@
 	left: 10px;
 	font-size: 18px;
 	width: 50%;
+}
+.gallery_h2:hover {
+	cursor: pointer;
 }
 
 @media (max-width: 650px) {

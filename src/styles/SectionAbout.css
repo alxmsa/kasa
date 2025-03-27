@@ -30,7 +30,9 @@
 .section_about_li img{
     height: 32px;
     margin: auto 18px;
-
+}
+.section_about_li img:hover {
+    cursor: pointer;
 }
 .section_about_li h2 {
     font-size: 24px;
@@ -39,9 +41,11 @@
     padding: 15px 0 0;
 }
 .section_about_content {
-    background-color: gray;
+    background-color: rgb(251, 251, 251);
     border-radius: 5px;
     padding: 10px;
+    color: black;
+    border: 1px solid rgb(251, 251, 251);
 }
 
 @media (max-width: 650px) {

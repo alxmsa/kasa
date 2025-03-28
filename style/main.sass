@@ -178,6 +178,7 @@ $tablet: 1024px
   &_tags,
   &_description
     display: flex
+    cursor: pointer
 
   &_div1,
   &_div2,
@@ -261,7 +262,7 @@ $tablet: 1024px
 // SECTION1 & ABOUT
 .section1
   height: 223px
-  background-image: url('../assets/falaises.webp')
+  background-image: url('../src/assets/falaises.webp')
   background-size: cover
   background-position: 2% 49%
   background-repeat: no-repeat
@@ -303,7 +304,7 @@ $tablet: 1024px
 
 .section_about
   @extend .section1
-  background-image: url('../assets/montagnes.jpeg')
+  background-image: url('../src/assets/montagnes.jpeg')
 
 .opacity_about
   @extend .opacity
@@ -338,6 +339,9 @@ $tablet: 1024px
   padding: 10px
   color: black
   border: 1px solid $soft-bg
+
+.section_about_toggle
+  cursor: pointer
 
 @media (max-width: $mobile)
   .section_about

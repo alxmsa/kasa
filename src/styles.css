@@ -177,6 +177,7 @@
 }
 .logement_host, .logement_div1, .logement_div2, .logement_tags, .logement_description {
   display: flex;
+  cursor: pointer;
 }
 .logement_div1, .logement_div2, .logement_description {
   justify-content: space-between;
@@ -339,6 +340,10 @@
   padding: 10px;
   color: black;
   border: 1px solid rgb(251, 251, 251);
+}
+
+.section_about_toggle {
+  cursor: pointer;
 }
 
 @media (max-width: 650px) {

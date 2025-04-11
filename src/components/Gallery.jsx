@@ -13,7 +13,7 @@ function Gallery() {
         <div>
             <ul className='list_annonces'>
                 {annonces.map(({id, title, cover}) => (
-                    <li key={id} className='item'onClick={() => handleClick(id)}>
+                    <li key={id} className='item' onClick={() => handleClick(id)}>
                         <h2 className='gallery_h2'>{title}</h2>
                         <img alt={title} src={cover} className='gallery_img' />
                     </li>

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://alxmsa.github.io/kasa",
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
@@ -18,6 +19,8 @@
   },
   "scripts": {
     "sass": "sass --watch style/main.sass:src/styles.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.3.0"
   }
 }

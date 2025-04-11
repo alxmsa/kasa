@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import imgUp from '../assets/chevron-up.svg';
-import imgDown from '../assets/chevron-down.svg';
-/* import '../styles/ToggleButton.scss'; // si besoin */
 
 function ToggleButton({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);

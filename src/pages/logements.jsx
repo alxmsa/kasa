@@ -19,7 +19,6 @@ function Logements() {
             <Carousel />
             <LogementsDetails />
         </section>
-
     )
 }
 

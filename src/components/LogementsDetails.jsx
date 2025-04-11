@@ -7,8 +7,6 @@ function LogementsDetails() {
   const { id } = useParams();
   const logement = annonces.find((item) => item.id === id);
 
-  if (!logement) return null; // ou redirection si logement introuvable
-
   return (
     <section className='logement_section'>
       <div className='logement_div1'>
@@ -39,11 +37,11 @@ function LogementsDetails() {
             </div>
             <div className='logement_toggle_width'>
                 <ToggleButton title="Équipements">
-                <ul className="logement_equipments_content">
-                    {logement.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
-                    ))}
-                </ul>
+                  <ul className="logement_equipments_content">
+                      {logement.equipments.map((equipment, index) => (
+                      <li key={index}>{equipment}</li>
+                      ))}
+                  </ul>
                 </ToggleButton>
             </div>
         

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kasa/static/css/main.773655ec.css",
-    "main.js": "/kasa/static/js/main.ff3bac28.js",
+    "main.js": "/kasa/static/js/main.2fec2afc.js",
     "static/media/montagnes.jpeg": "/kasa/static/media/montagnes.796d007cebdd47cc489b.jpeg",
     "static/media/falaises.webp": "/kasa/static/media/falaises.7408aee8b9b66c8498c4.webp",
     "static/media/react-bootstrap-carousel.eot": "/kasa/static/media/react-bootstrap-carousel.1a0fe919ea31a13740d3.eot",
@@ -13,10 +13,10 @@
     "static/media/star-solid_red.svg": "/kasa/static/media/star-solid_red.5be82ce5212c8ccbb7f1e0cde4051c80.svg",
     "static/media/chevron-up.svg": "/kasa/static/media/chevron-up.0fea8b2c29661f8deae7c0870d8f97f4.svg",
     "main.773655ec.css.map": "/kasa/static/css/main.773655ec.css.map",
-    "main.ff3bac28.js.map": "/kasa/static/js/main.ff3bac28.js.map"
+    "main.2fec2afc.js.map": "/kasa/static/js/main.2fec2afc.js.map"
   },
   "entrypoints": [
     "static/css/main.773655ec.css",
-    "static/js/main.ff3bac28.js"
+    "static/js/main.2fec2afc.js"
   ]
 }

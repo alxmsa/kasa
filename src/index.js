@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import APropos from './pages/APropos'
 import Logements from './pages/logements'
@@ -16,9 +16,9 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route path='/kasa' element={<Home />} />
-        <Route path='/kasa/apropos' element={<APropos />} />
-        <Route path='/kasa/logements/:id' element={<Logements />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/apropos' element={<APropos />} />
+        <Route path='/logements/:id' element={<Logements />} />
         <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
